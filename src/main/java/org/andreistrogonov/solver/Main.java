@@ -1,4 +1,4 @@
-package org.example;
+package org.andreistrogonov.solver;
 
 public class Main {
     public static void main(String[] args) {
