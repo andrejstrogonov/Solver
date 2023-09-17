@@ -2,12 +2,12 @@ package org.andreistrogonov.solver;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MainTest {
+
     @Test
     public void testAdd() {
-        assertEquals("normal",Parser.weightCalculator(55,"small",false));
-
+        assertTrue(Parser.weightCalculator(50,"normal", "male"));
     }
 }

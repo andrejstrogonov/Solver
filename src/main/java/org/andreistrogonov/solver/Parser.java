@@ -1,8 +1,12 @@
 package org.andreistrogonov.solver;
 
 public class Parser {
-
-    public static String weightCalculator(int i, String small, boolean b) {
-        return new String("normal");
+    public static boolean weightCalculator(int i, String normal, String male) {
+        return i >= 50 && normal == "normal" && male == "male";
     }
+
+
+
+
+
 }
