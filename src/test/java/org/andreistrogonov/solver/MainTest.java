@@ -64,4 +64,13 @@ public class MainTest {
         assertNotEquals(67, f(30, "m"));
         assertNotEquals(67, f(56, "w"));
     }
+
+    /** 
+     * Tests of rules from <b>9</b> to <b>12</b>.
+     * @author Ivan Belyj
+    */
+    @Test
+    public void tests9_12() {
+        Tests9_12.testRules();
+    }
 }
