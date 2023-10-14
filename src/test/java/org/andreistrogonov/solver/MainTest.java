@@ -12,7 +12,7 @@ public class MainTest {
 
     @Test
     public void testAdd() {
-//        assertTrue(Parser.weightCalculator(50,"normal", "male"));
+       assertTrue(Parser.weightCalculator(50,"normal", "male"));
 
         // Rule 8
         assertEquals(67, Parser.basicLifeExpectancy(25, "ж"));
