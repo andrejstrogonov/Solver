@@ -1,4 +1,4 @@
-package org.andreistrogonov.solver;
+package org.andreistrogonov.solver.enums;
 
 public enum Gender {
     MALE,
