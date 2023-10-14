@@ -27,18 +27,4 @@ public class Parser {
             default -> null;
         };
     }
-
-    public static RelativeWeight calculateRelativeWeight(int weight, BodyType bodyType,
-        Gender gender) {
-        return switch (gender) {
-            case FEMALE -> {
-                if (weight <= 55 && bodyType == BodyType.SMALL) {
-                    yield RelativeWeight.NORMAL;
-                } else {
-                    yield null;
-                }
-            }
-            default -> null;
-        };
-    }
 }
