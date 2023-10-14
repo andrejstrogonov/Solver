@@ -4,7 +4,7 @@ public class Parser {
     public static boolean weightCalculator(int i, String normal, String male) {
         return i >= 50 && normal == "normal" && male == "male";
     }
-    лтаомло
+
 
     public static boolean weightCalcUnderweight(int i, String underweight, String male) {
         return i < 50 && underweight.equals("underweight") && male.equals("male");
