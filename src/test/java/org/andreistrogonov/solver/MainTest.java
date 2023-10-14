@@ -4,73 +4,25 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import org.andreistrogonov.solver.enums.BodyType;
+import org.andreistrogonov.solver.enums.Gender;
+import org.andreistrogonov.solver.enums.RelativeWeight;
+
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MainTest {
-
-    public int f(int age, String gender) {
-
-        if (age <= 25 && gender.equals("w")) {
-            return 72;
-        }
-
-        if (age <= 25 && gender.equals("m")) {
-            return 67;
-        }
-
-        if (age > 25 && age < 55 && gender.equals("w")) {
-            return 67;
-        }
-
-        return 62;
-    }
-
-    public String f5(String start) {
-
-        if (start.equals("yes")) {
-            return "other";
-        }
-
-        return "no other";
-    }
-
     @Test
     public void testAdd() {
-//        assertTrue(Parser.weightCalculator(50,"normal", "male"));
+        // Правила 9-12 (Иван Белый)
+        assertEquals(62, Parser.calculateBasicLifeExpectancy(30, Gender.MALE));
+        assertEquals(64, Parser.calculateBasicLifeExpectancy(60, Gender.FEMALE));
+        assertEquals(60, Parser.calculateBasicLifeExpectancy(60, Gender.MALE));
+        assertEquals(62, Parser.calculateBasicLifeExpectancy(50, Gender.FEMALE));
 
-        // Привило 5
-        assertEquals("other", f5("yes"));
-        assertNotEquals("other", f5("no"));
-
-        // Правило 6
-        assertEquals(72, f(25, "w"));
-        assertEquals(72, f(20, "w"));
-
-        assertNotEquals(72, f(20, "m"));
-        assertNotEquals(72, f(50, "w"));
-
-        // Правило 7
-        assertEquals(67, f(25, "m"));
-        assertEquals(67, f(20, "m"));
-
-        assertNotEquals(67, f(50, "m"));
-        assertNotEquals(67, f(20, "w"));
-
-        // Правило 8
-        assertEquals(67, f(26, "w"));
-        assertEquals(67, f(54, "w"));
-
-        assertNotEquals(67, f(25, "w"));
-        assertNotEquals(67, f(30, "m"));
-        assertNotEquals(67, f(56, "w"));
-    }
-
-    /** 
-     * Tests of rules from <b>9</b> to <b>12</b>.
-     * @author Ivan Belyj
-    */
-    @Test
-    public void tests9_12() {
-        Tests9_12.testRules();
+        assertEquals(RelativeWeight.NORMAL,
+            Parser.calculateRelativeWeight(50, BodyType.LARGE, Gender.FEMALE));
+        assertEquals(RelativeWeight.NORMAL,
+            Parser.calculateRelativeWeight(60, BodyType.LARGE, Gender.MALE));
     }
 }
