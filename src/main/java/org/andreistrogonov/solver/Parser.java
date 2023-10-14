@@ -11,7 +11,7 @@ public class Parser {
             return 67;
         }
 
-        return 62;  // default value
+        return 62;
     }
 
     public static String relativeWeight(int weight, String bodyType, String gender) {
@@ -28,7 +28,7 @@ public class Parser {
             return "недостаточный";
         }
 
-        return "нормальный";  // default value
+        return "нормальный";
 
     }
 
