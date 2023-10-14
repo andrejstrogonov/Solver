@@ -1,53 +1,35 @@
 package org.andreistrogonov.solver;
 
 public class Parser {
+
     public static boolean weightCalculator(int i, String normal, String male) {
         return i >= 50 && normal == "normal" && male == "male";
     }
 
-
-    public static boolean weightCalcUnderweight(int i, String underweight, String male) {
-        return i < 50 && underweight.equals("underweight") && male.equals("male");
-    }
-
-    public static String coronaryRiskCalcBelow(String belowAvg) {
-        if (belowAvg.equals("below the average")) {
-            return "low";
-        }
-        return "undefined";
-    }
-
-    public static String coronaryRiskCalcAverage(String average) {
-        if (average.equals("average")) {
-            return "low";
-        }
-        return "undefined";
-    }
-
-    public static String checkStart(String start) {
-        if (start.equals("yes")) {
-            return "different";
-        }
-        return "undefined";
-    }
-
-    public static int lifetimeCalcFemale(int age, String female) {
-        if (age <= 25 && female.equals("female")) {
-            return 72;
-        }
-        return -1;
-    }
-
-    public static int lifetimeCalcMale(int age, String male) {
-        if (age <= 25 && male.equals("male")) {
+    public static int basicLifeExpectancy(int age, String gender) {
+        if (age >= 25 && age < 55 && gender.equals("ж")) {
             return 67;
         }
-        return -1;
+
+        return 62;  // default value
     }
 
+    public static String relativeWeight(int weight, String bodyType, String gender) {
 
+        if (weight >= 85 && bodyType.equals("мелкое") && gender.equals("ж")) {
+            return "излишний";
+        }
 
+        if (weight >= 55 && weight < 85 && bodyType.equals("мелкое") && gender.equals("ж")) {
+            return "излишний";
+        }
 
+        if (weight <= 55 && bodyType.equals("крупное")) {
+            return "недостаточный";
+        }
 
+        return "нормальный";  // default value
+
+    }
 
 }
