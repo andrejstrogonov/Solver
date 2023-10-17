@@ -1,4 +1,4 @@
-package org.andreistrogonov.solver;
+package org.andreistrogonov.Solver;
 
 public class Parser {
 

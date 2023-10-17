@@ -1,9 +1,8 @@
 plugins {
     id("java")
-    id("application")
 }
 
-group = "org.andreistrogonov"
+group = "com.andrejstrogonov"
 version = "1.0-SNAPSHOT"
 
 repositories {
