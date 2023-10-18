@@ -1,9 +1,11 @@
-package org.andreistrogonov.Solver;
+package main.java.com.andreistrogonov;
+
+import java.util.Objects;
 
 public class Parser {
 
     public static boolean weightCalculator(int i, String normal, String male) {
-        return i >= 50 && normal == "normal" && male == "male";
+        return i >= 50 && Objects.equals(normal, "normal") && Objects.equals(male, "male");
     }
 
     public static int basicLifeExpectancy(int age, String gender) {
