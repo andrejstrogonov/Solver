@@ -1,8 +1,8 @@
-package org.andreistrogonov.solver;
+package java.com.andreistrogonov;
 
 import org.junit.jupiter.api.Test;
 
-import org.andreistrogonov.solver.Parser;
+import main.java.com.andreistrogonov.Parser;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
