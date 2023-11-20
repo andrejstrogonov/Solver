@@ -52,9 +52,9 @@ public class MainTest {
         assertNotEquals("insufficient", Parser.relativeWeight(45, "small", "-"));
         assertNotEquals("insufficient", Parser.relativeWeight(55, "small", "-"));
         assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "-"));
-        assertNotEquals("insufficient", Parser.relativeWeight(45, "small", "м"));
-        assertNotEquals("insufficient", Parser.relativeWeight(55, "small", "ж"));
-        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "м"));
-        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "ж"));
+        assertNotEquals("insufficient", Parser.relativeWeight(45, "small", "male"));
+        assertNotEquals("insufficient", Parser.relativeWeight(55, "small", "female"));
+        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "male"));
+        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "female"));
     }
 }
