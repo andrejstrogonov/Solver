@@ -1,64 +1,60 @@
 package java.com.andreistrogonov;
 
+import main.java.com.andreistrogonov.Parser;
 import org.junit.jupiter.api.Test;
 
-import main.java.com.andreistrogonov.Parser;
+import static org.junit.jupiter.api.Assertions.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MainTest {
-
     @Test
     public void testAdd() {
-       assertTrue(Parser.weightCalculator(50,"normal", "male"));}
-
+        assertTrue(Parser.weightCalculator(50,"normal", "male"));}
     @Test
-   public void testLife() {
-        // Rule 8
-        assertEquals(67, Parser.basicLifeExpectancy(25, "ж"));
-        assertEquals(67, Parser.basicLifeExpectancy(54, "ж"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(23, "ж"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(20, "м"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(25, "м"));}
-   @Test
-   public void testRule13(){
-        assertEquals("излишний", Parser.relativeWeight(85, "мелкое", "ж"));
-        assertEquals("излишний", Parser.relativeWeight(86, "мелкое", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "мелкое", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(85, "крупное", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(85, "мелкое", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "крупное", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(87, "крупное", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "мелкое", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "крупное", "м"));}
- @Test
- public void testRule14(){
+    public void testLife(){
+        assertEquals(67, Parser.basicLifeExpectancy(25, "female"));
+        assertEquals(67, Parser.basicLifeExpectancy(54, "female"));
+        assertNotEquals(67, Parser.basicLifeExpectancy(23, "female"));
+        assertNotEquals(67, Parser.basicLifeExpectancy(20, "male"));
+        assertNotEquals(67, Parser.basicLifeExpectancy(25, "male"));}
+    @Test
+    public void testRule13() {
+        assertEquals("redundant", Parser.relativeWeight(85, "small", "female"));
+        assertEquals("redundant", Parser.relativeWeight(86, "small", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "small", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(85, "large", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(85, "small", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "large", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(87, "large", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "small", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "large", "male"));
+    }
+    @Test
+    public void testRule14() {
+        assertEquals("redundant", Parser.relativeWeight(55, "small", "female"));
+        assertEquals("redundant", Parser.relativeWeight(84, "small", "female"));
+        assertEquals("redundant", Parser.relativeWeight(65, "small", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "small", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(82, "large", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(82, "small", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "large", "female"));
+        assertNotEquals("redundant", Parser.relativeWeight(82, "large", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "small", "male"));
+        assertNotEquals("redundant", Parser.relativeWeight(45, "largeе", "male"));
+    }
+    @Test
+    public void testRule15() {
+        assertEquals("insufficient", Parser.relativeWeight(55, "large", "-"));
+        assertEquals("insufficient", Parser.relativeWeight(45, "large", "-"));
+        assertEquals("insufficient", Parser.relativeWeight(45, "large", "м"));
+        assertEquals("insufficient", Parser.relativeWeight(55, "large", "ж"));
 
-        assertEquals("излишний", Parser.relativeWeight(55, "мелкое", "ж"));
-        assertEquals("излишний", Parser.relativeWeight(84, "мелкое", "ж"));
-        assertEquals("излишний", Parser.relativeWeight(65, "мелкое", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "мелкое", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(82, "крупное", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(82, "мелкое", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "крупное", "ж"));
-        assertNotEquals("излишний", Parser.relativeWeight(82, "крупное", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "мелкое", "м"));
-        assertNotEquals("излишний", Parser.relativeWeight(45, "крупное", "м"));}
- @Test
- public void testRule15(){
-
-        assertEquals("недостаточный", Parser.relativeWeight(55, "крупное", "-"));
-        assertEquals("недостаточный", Parser.relativeWeight(45, "крупное", "-"));
-        assertEquals("недостаточный", Parser.relativeWeight(45, "крупное", "м"));
-        assertEquals("недостаточный", Parser.relativeWeight(55, "крупное", "ж"));
-
-        assertNotEquals("недостаточный", Parser.relativeWeight(45, "мелкое", "-"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(55, "мелкое", "-"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(56, "крупное", "-"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(45, "мелкое", "м"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(55, "мелкое", "ж"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(56, "крупное", "м"));
-        assertNotEquals("недостаточный", Parser.relativeWeight(56, "крупное", "ж"));}
+        assertNotEquals("insufficient", Parser.relativeWeight(45, "small", "-"));
+        assertNotEquals("insufficient", Parser.relativeWeight(55, "small", "-"));
+        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "-"));
+        assertNotEquals("insufficient", Parser.relativeWeight(45, "small", "м"));
+        assertNotEquals("insufficient", Parser.relativeWeight(55, "small", "ж"));
+        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "м"));
+        assertNotEquals("insufficient", Parser.relativeWeight(56, "large", "ж"));
+    }
 }
