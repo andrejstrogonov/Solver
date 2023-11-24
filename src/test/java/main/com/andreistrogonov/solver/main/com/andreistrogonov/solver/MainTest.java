@@ -12,13 +12,11 @@ public class MainTest {
         assertTrue(Parser.weightCalculator(50,"normal", "male"));}
     @Test
     public void testLife(){
-        assertEquals(67, Parser.basicLifeExpectancy(25, "female"));
-        assertEquals(67, Parser.basicLifeExpectancy(54, "female"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(23, "female"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(20, "male"));
-        assertNotEquals(67, Parser.basicLifeExpectancy(25, "male"));}
+        assertEquals(67, Parser.basicLWomanifeExpectancy("female"));
+        assertEquals(67,Parser.basicManLifeExpectancy("male"));}
     @Test
     public void testRule13() {
+        assertEquals("redundant",Parser.secondWeightCalculator(45,"small","female") );
         assertEquals("redundant", Parser.relativeWeight(85, "small", "female"));
         assertEquals("redundant", Parser.relativeWeight(86, "small", "female"));
         assertNotEquals("redundant", Parser.relativeWeight(45, "small", "female"));
