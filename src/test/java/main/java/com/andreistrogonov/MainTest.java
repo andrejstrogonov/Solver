@@ -1,9 +1,9 @@
-package main.com.andreistrogonov.solver;
+package main.java.com.andreistrogonov;
 
-import main.java.com.andreistrogonov.Parser;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 
 public class MainTest {
