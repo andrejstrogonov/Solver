@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MainTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+    <module name="Solver.test" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="java.com.andreistrogonov.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <option name="PACKAGE_NAME" value="main.com.andreistrogonov.solver" />
+    <option name="MAIN_CLASS_NAME" value="main.com.andreistrogonov.solver.MainTest" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
