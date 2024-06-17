@@ -7,12 +7,6 @@ x
 Hsrc/main/java/main/java/com/andreistrogonov/lpstructure/LPStructure.java,8\6\866097e7c9d93c479692b6c037bc3bf438e4e3aa
 e
 5src/main/java/main/java/com/andreistrogonov/Main.java,d\7\d7713e37a8dc924d563b1af9a0a357aea01965c2
-k
-;src/main/java/main/java/com/andreistrogonov/data/facts.java,c\5\c59d2096efe4e4b82ebb58e7794fbd4f37e16ca2
-m
-=src/main/java/main/java/com/andreistrogonov/data/Weights.java,1\d\1d3a9374409e2e58bde9d9b962f53d80d688e240
-k
-;src/main/java/main/java/com/andreistrogonov/data/Facts.java,a\2\a2f1499b805ac72eedaaaa44668133ce71e10976
 T
 $.idea/runConfigurations/MainTest.xml,3\4\34aa69988f9c515c7bb672e8be2cb6627e94df39
 Å
@@ -39,3 +33,10 @@ r
 Bsrc/main/java/main/java/com/andreistrogonov/data/stream/Facts.java,5\8\587a7dc46b3a1ef749beb910e2698082fe02f18d
 s
 Csrc/main/java/main/java/com/andreistrogonov/data/stream/Weighs.java,0\1\01b86b19174f11017e5bc2e1097c0a1ac69f8b90
+<
+newrelic.yml,7\0\70b41e3b8fcb177bf439abda086d2f21c9eff453
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+Z
+*newrelic/infrastructure/newrelic-infra.yml,1\3\13695cdfa835e445da1f97fa4bc8ded0bfb5ae38
