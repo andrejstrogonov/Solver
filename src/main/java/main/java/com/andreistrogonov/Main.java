@@ -1,5 +1,6 @@
 package main.java.com.andreistrogonov;
 
+import main.java.com.andreistrogonov.data.atomic.Facts;
 import main.java.com.andreistrogonov.lpstructure.LPStructure;
 
 public class Main {
@@ -7,5 +8,8 @@ public class Main {
         System.out.print(LPStructure.sum(true,false));
         System.out.print(LPStructure.multiplication(true,false));
         System.out.print(LPStructure.implication(true,false));
+        Facts first = new Facts(true);
+        Facts second = new Facts(false);
+        System.out.print(LPStructure.sum(first.first_argument(),second.first_argument()));
     }
 }

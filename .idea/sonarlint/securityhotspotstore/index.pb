@@ -1,14 +1,10 @@
 
-i
-9src/test/java/main/java/com/andreistrogonov/MainTest.java,0\3\03ba17a7caa0100b16c51c429225ac90489922b7
 |
 Lsrc/test/java/main/java/com/andreistrogonov/lpstructure/ExperimentsTest.java,5\0\50aeb3e6c0a488b7620262eaa548aca96681139a
 @
 build.gradle.kts,d\b\dbcff70658daf80b53ce624f6adcaa529df5ed8d
 x
 Hsrc/main/java/main/java/com/andreistrogonov/lpstructure/LPStructure.java,8\6\866097e7c9d93c479692b6c037bc3bf438e4e3aa
-g
-7src/main/java/main/java/com/andreistrogonov/Parser.java,1\9\192a1efdabf704539ddf047306ed80a464861bf0
 e
 5src/main/java/main/java/com/andreistrogonov/Main.java,d\7\d7713e37a8dc924d563b1af9a0a357aea01965c2
 k
@@ -32,12 +28,14 @@ S
 w
 G.idea/sonarlint/issuestore/5/0/50aeb3e6c0a488b7620262eaa548aca96681139a,d\e\de37e8d86260ebf4631b4942322d66d42c7659ab
 Å
-Q.idea/sonarlint/securityhotspotstore/0/3/03ba17a7caa0100b16c51c429225ac90489922b7,1\f\1f809b8f3f62b2b17dfc0ab677da4278ba607d6b
-Å
 Q.idea/sonarlint/securityhotspotstore/5/0/50aeb3e6c0a488b7620262eaa548aca96681139a,6\f\6fb4d57b45fb7ff79928683c5ee3e3461c57d978
-w
-G.idea/sonarlint/issuestore/0/3/03ba17a7caa0100b16c51c429225ac90489922b7,1\c\1c9670b6f7ffce682a83e5817882c68d3bcb652b
-Å
-Q.idea/sonarlint/securityhotspotstore/1/9/192a1efdabf704539ddf047306ed80a464861bf0,7\b\7b081155928d5f8cd40ebb464b41a998026cfc20
 Å
 Q.idea/sonarlint/securityhotspotstore/d/7/d7713e37a8dc924d563b1af9a0a357aea01965c2,5\8\5877ab8aeef02b672a424076d809155989ae18eb
+r
+Bsrc/main/java/main/java/com/andreistrogonov/data/atomic/Facts.java,8\5\85e7b412e6e588f947b433aeb294b63699e9b1f0
+t
+Dsrc/main/java/main/java/com/andreistrogonov/data/atomic/Weights.java,0\1\0136b000d96c518529f7c34798fcfb984fc58a1e
+r
+Bsrc/main/java/main/java/com/andreistrogonov/data/stream/Facts.java,5\8\587a7dc46b3a1ef749beb910e2698082fe02f18d
+s
+Csrc/main/java/main/java/com/andreistrogonov/data/stream/Weighs.java,0\1\01b86b19174f11017e5bc2e1097c0a1ac69f8b90
