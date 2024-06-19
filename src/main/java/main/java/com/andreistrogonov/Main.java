@@ -3,7 +3,7 @@ package main.java.com.andreistrogonov;
 
 // PVS-Studio Static Code Analyzer for C, C++, C#, and Java: https://pvs-studio.com
 import main.java.com.andreistrogonov.data.atomic.Facts;
-import main.java.com.andreistrogonov.lpstructure.LPStructure;
+import main.java.com.andreistrogonov.basicstructures.LPStructure;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,5 +13,6 @@ public class Main {
         Facts first = new Facts(true);
         Facts second = new Facts(false);
         System.out.print(LPStructure.sum(first.first_argument(),second.first_argument()));
+
     }
 }

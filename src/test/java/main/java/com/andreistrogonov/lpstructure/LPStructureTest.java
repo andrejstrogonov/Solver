@@ -1,10 +1,11 @@
 package main.java.com.andreistrogonov.lpstructure;
 
+import main.java.com.andreistrogonov.basicstructures.LPStructure;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class ExperimentsTest {
+class LPStructureTest {
 
     @Test
     void implication() {

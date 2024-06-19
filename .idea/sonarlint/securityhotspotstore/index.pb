@@ -40,3 +40,19 @@ Csrc/main/java/main/java/com/andreistrogonov/data/stream/Weighs.java,0\1\01b86b
 Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 Z
 *newrelic/infrastructure/newrelic-infra.yml,1\3\13695cdfa835e445da1f97fa4bc8ded0bfb5ae38
+„
+Tsrc/main/java/main/java/com/andreistrogonov/streamlpstructure/StreamLPStructure.java,1\2\12639bde1084617fa75fcb7d86d9578fc192e3ea
+‡
+Wsrc/test/java/main/java/com/andreistrogonov/lpstructure/ExperimentsLPStructureTest.java,b\2\b21eddd6383f327efcfeb592de38e06db9fb35ee
+|
+Lsrc/test/java/main/java/com/andreistrogonov/lpstructure/LPStructureTest.java,0\f\0f587a4630dfb0d7ba3f472cf3555579b7f72d06
+ˆ
+Xsrc/test/java/main/java/com/andreistrogonov/streamlpstructure/StreamLPStructureTest.java,e\4\e4cb788c0543d725784b6fe08f37b7d76d73af14
+ˆ
+Xsrc/main/java/main/java/com/andreistrogonov/basicstructures/lpstructure/LPStructure.java,2\0\2004fdffffb947bf490c3ac8aabe58cf2a4766d4
+ 
+psrc/main/java/main/java/com/andreistrogonov/basicstructures/lpstructure/streamlpstructure/StreamLPStructure.java,0\c\0c5100ff863380e36456c57de29a83d9027193c1
+|
+Lsrc/main/java/main/java/com/andreistrogonov/basicstructures/LPStructure.java,d\4\d4e4651802c1f056cbba007989e3deff8e74e609
+‚
+Rsrc/main/java/main/java/com/andreistrogonov/basicstructures/StreamLPStructure.java,2\3\237368400cecc415da6fad9d5894225d1adf7b2d

@@ -1,4 +1,4 @@
-package main.java.com.andreistrogonov.lpstructure;
+package main.java.com.andreistrogonov.basicstructures;
 
 public interface LPStructure {
     static boolean sum(boolean a, boolean b) {
