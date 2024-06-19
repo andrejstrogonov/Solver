@@ -1,6 +1,6 @@
 
-r	java:S106"+Replace this use of System.out by a logger.(‹ÿ¹şÿÿÿÿ8É¶¶º‚2J$0af06040-6e5d-4a81-bce2-8afe735cb3ce
-m	java:S106	"+Replace this use of System.out by a logger.(«Ò½8É¶¶º‚2J$092e67fb-63b0-4c11-9f02-0e4c8bc12a0a
-l	java:S106
-"+Replace this use of System.out by a logger.(˜ò×8Ê¶¶º‚2J$bde10e79-fc0d-43f2-b4ae-9f01cf268992
-r	java:S106"+Replace this use of System.out by a logger.(óı²Ÿùÿÿÿÿ8°å¹º‚2J$c5f20c5a-1407-4080-8036-de446a6c8a0e
+r	java:S106
+"+Replace this use of System.out by a logger.(‹ÿ¹şÿÿÿÿ8É¶¶º‚2J$10d29a0b-cbd0-4d33-8081-1e1c6dbc9a1d
+m	java:S106"+Replace this use of System.out by a logger.(«Ò½8É¶¶º‚2J$46f361a2-f5cc-45cf-9003-c35c2be44a98
+l	java:S106"+Replace this use of System.out by a logger.(˜ò×8Ê¶¶º‚2J$c3fcea3c-8358-4dee-92e6-4e21670bc49c
+r	java:S106"+Replace this use of System.out by a logger.(óı²Ÿùÿÿÿÿ8°å¹º‚2J$3884446d-2020-4b0e-b051-451c6fa77abe
