@@ -12,14 +12,8 @@ class StreamLPStructureTest {
     }
 
     @Test
-    void implication(){
-        assertEquals();
-
-    }
-    @Test
     void multiplication(){
         assertEquals(StreamLPStructure.multiplication(1,2,3),6);
-
     }
 
 
