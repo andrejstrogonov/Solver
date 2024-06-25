@@ -1,6 +1,7 @@
 package main.java.com.andreistrogonov.data.stream;
 
-import java.util.ArrayList;
+import java.lang.reflect.Array;
 
-public record Facts(ArrayList<Boolean> first_argument) {
+public record Facts(Array first_argument) {
+
 }
