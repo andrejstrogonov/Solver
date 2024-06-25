@@ -1,6 +1,6 @@
 package main.java.com.andreistrogonov.basicstructures;
 
-public interface StreamLPStructure {
+public interface InductionLPStructure {
 
     static short sum(int i, int i1, int i2) {
         return (short) (i+i1+i2);

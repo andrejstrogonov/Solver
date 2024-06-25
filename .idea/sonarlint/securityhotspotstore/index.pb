@@ -36,3 +36,7 @@ Xsrc/test/java/main/java/com/andreistrogonov/streamlpstructure/StreamLPStructure
 Lsrc/main/java/main/java/com/andreistrogonov/basicstructures/LPStructure.java,d\4\d4e4651802c1f056cbba007989e3deff8e74e609
 ‚
 Rsrc/main/java/main/java/com/andreistrogonov/basicstructures/StreamLPStructure.java,2\3\237368400cecc415da6fad9d5894225d1adf7b2d
+‹
+[src/test/java/main/java/com/andreistrogonov/streamlpstructure/InductionLPStructureTest.java,a\9\a989bf887311d32814e1bbb02be5f2d074a5aabd
+…
+Usrc/main/java/main/java/com/andreistrogonov/basicstructures/InductionLPStructure.java,8\6\865b04e7f3f4676d0db6e0bed0fcdc1d60bad0fe
