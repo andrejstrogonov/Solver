@@ -1,4 +1,4 @@
-package main.java.com.andreistrogonov.streamlpstructure;
+package main.java.com.andreistrogonov.inductionlpstructure;
 
 import main.java.com.andreistrogonov.basicstructures.InductionLPStructure;
 import org.junit.jupiter.api.Test;
