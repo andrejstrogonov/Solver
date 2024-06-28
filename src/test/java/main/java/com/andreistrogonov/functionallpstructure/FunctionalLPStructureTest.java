@@ -1,8 +1,8 @@
 package main.java.com.andreistrogonov.functionallpstructure;
 
 import org.junit.jupiter.api.Test;
-import main.java.com.andreistrogonov.basicstructures.FunctionalLPStructure;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 
@@ -14,7 +14,14 @@ class FunctionalLPStructureTest {
 
     @Test
     void sum(){
+        factsArrayList.add(1);
+        factsArrayList.add(2);
+        factsArrayList.add(3);
+        factsArrayList.add(4);
         factsArrayList.add(5);
-        assertEquals(6,FunctionalLPStructure.sum());
+        Mockito.verify(factsArrayList).add(4);
+        assertEquals(0,factsArrayList.size());
+        Mockito.when(factsArrayList.size()).thenReturn(100);
+        assertEquals(100,factsArrayList.size());
     }
 }
