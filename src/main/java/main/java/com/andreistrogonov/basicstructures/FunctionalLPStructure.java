@@ -8,4 +8,9 @@ public interface FunctionalLPStructure {
         int[] facts = {1,2,3};
         return Arrays.stream(facts).sum();
     }
+
+    static int add(int i, int i1){
+        return i+i1;
+    }
+
 }
