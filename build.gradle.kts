@@ -11,6 +11,8 @@ repositories {
 }
 
 dependencies {
+    implementation("org.pitest:pitest:1.16.1")
+    implementation("org.pitest:pitest-junit5-plugin:1.2.1")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -21,15 +23,4 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
-}
-
-configure<info.solidsoft.gradle.pitest.PitestPluginExtension> {
-    junit5PluginVersion.set("1.0.0")
-    avoidCallsTo.set(setOf("kotlin.jvm.internal"))
-    mutators.set(setOf("STRONGER"))
-    targetClasses.set(setOf("pitest.test.*"))  //by default "${project.group}.*"
-    targetTests.set(setOf("pitest.test.*Test"))
-//    pitestVersion.set("1.4.0")   //current defined for Gradle plugin PIT version should be used
-    threads.set(Runtime.getRuntime().availableProcessors())
-    outputFormats.set(setOf("XML", "HTML"))
 }
