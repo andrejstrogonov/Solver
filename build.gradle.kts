@@ -13,6 +13,7 @@ repositories {
 dependencies {
     implementation("org.pitest:pitest:1.16.1")
     implementation("org.pitest:pitest-junit5-plugin:1.2.1")
+    implementation("log4j:log4j:1.2.17")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("org.junit.jupiter:junit-jupiter")
