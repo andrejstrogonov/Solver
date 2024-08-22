@@ -13,6 +13,10 @@ class FunctionalLPStructureTest {
     void testAdd(){
         when(FunctionalLPStructure.add(2,3)).thenReturn(5);
     }
+    @Test
+    void testMultiply(){
+        when(FunctionalLPStructure.multiply(2,3)).thenReturn(6);
+    }
 
 
 
