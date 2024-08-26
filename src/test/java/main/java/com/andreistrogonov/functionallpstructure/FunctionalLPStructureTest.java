@@ -17,6 +17,10 @@ class FunctionalLPStructureTest {
     void testMultiply(){
         when(FunctionalLPStructure.multiply(2,3)).thenReturn(6);
     }
+    @Test
+    void testImplication(){
+        when(FunctionalLPStructure.implication(true,false)).thenReturn(true);
+    }
 
 
 
