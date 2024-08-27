@@ -6,16 +6,18 @@ import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.Mockito.when;
+import static org.testcontainers.shaded.org.hamcrest.MatcherAssert.assertThat;
 
 @RunWith(MockitoJUnitRunner.class)
 class FunctionalLPStructureTest {
     @Test
     void testAdd(){
-        when(FunctionalForMockLPStructure.add(2,3)).thenReturn(5);
+        assertThat(when(FunctionalForMockLPStructure.add(true,false)).thenReturn(true));
+
     }
     @Test
     void testMultiply(){
-        when(FunctionalForMockLPStructure.multiply(2,3)).thenReturn(6);
+        when(FunctionalForMockLPStructure.multiply(true,false)).thenReturn(false);
     }
     @Test
     void testImplication(){
