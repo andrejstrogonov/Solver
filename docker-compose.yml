@@ -6,7 +6,22 @@ services:
       - '27017:27017'
     volumes:
       - db:/data/db
-volumes:
-  db:
-    driver:
-      local
+
+  postgres:
+    image: postgres:latest
+    env:
+      POSTGRES_PASSWORD: postgres
+    options: >-
+      --health-cmd pg_isready
+      --health-interval 10s
+      --health-timeout 5s
+      --health-retries 5
+    ports:
+      - '5432:5432'
+
+db:
+  driver:
+    - local
+
+
+
