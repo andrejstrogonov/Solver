@@ -21,7 +21,11 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.mockito:mockito-core:5.12.0")
-    testImplementation("org.springframework.boot:spring-boot-testcontainers:3.3.3")
+    testImplementation("org.springframework.boot:spring-boot-test:3.3.3")
+    testImplementation ("org.testcontainers:testcontainers:1.20.1")
+    testImplementation ("org.testcontainers:postgresql:1.20.1")
+
+
 
 }
 
