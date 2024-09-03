@@ -19,9 +19,7 @@ services:
     ports:
       - '5432:5432'
 
-db:
-  driver:
-    - local
-
-
-
+volumes:
+  db:
+    driver:
+      local
